@@ -18,6 +18,7 @@ import com.thecocktail.examples.microservice.entity.Account;
 import com.thecocktail.examples.microservice.entity.TransferAmount;
 import com.thecocktail.examples.microservice.exceptions.AccountNotFoundException;
 import com.thecocktail.examples.microservice.repository.AccountRepository;
+import com.thecocktail.examples.microservice.service.TransferToAccountService;
 
 /**
  * Controller to manage accounts
@@ -33,6 +34,9 @@ public class AccountResource {
 	 */
 	@Autowired
 	private AccountRepository accountRepository;
+	
+	@Autowired
+	private TransferToAccountService transferToAccountService;
 
 	/**
 	 * List all accounts persisted
@@ -54,7 +58,7 @@ public class AccountResource {
 	 *             if no account found for that id
 	 */
 	@GetMapping("/accounts/{id}")
-	public Account retrieveAccount(@PathVariable long id) throws AccountNotFoundException {
+	public Account retrieveAccount(@PathVariable long id) {
 		Account account = accountRepository.findOne(id);
 
 		if (account == null)
@@ -108,9 +112,7 @@ public class AccountResource {
 		if (accountRetrieved == null)
 			return ResponseEntity.notFound().build();
 
-		accountRetrieved.setAmount(accountRetrieved.getAmount().add(transfer.getAmount()));
-
-		accountRepository.save(accountRetrieved);
+		accountRepository.save(transferToAccountService.transfer(transfer, accountRetrieved));
 
 		return ResponseEntity.noContent().build();
 	}
