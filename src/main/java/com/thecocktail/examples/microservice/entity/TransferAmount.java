@@ -17,6 +17,16 @@ public class TransferAmount {
 	 */
 	@JsonProperty
 	private BigDecimal amount;
+	
+	public TransferAmount() {
+		super();
+	}
+	
+	public TransferAmount(BigDecimal amount) {
+		super();
+		this.amount = amount;
+	}
+
 
 	public BigDecimal getAmount() {
 		return amount;
@@ -24,9 +34,5 @@ public class TransferAmount {
 
 	public void setAmount(BigDecimal amount) {
 		this.amount = amount;
-	}
-
-	public TransferAmount() {
-		super();
 	}
 }
