@@ -1,4 +1,4 @@
-package com.thecocktail.examples.microservice.controller;
+package com.pgancas.examples.microservice.controller;
 
 import java.net.URI;
 import java.util.List;
@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.thecocktail.examples.microservice.entity.Account;
-import com.thecocktail.examples.microservice.entity.TransferAmount;
-import com.thecocktail.examples.microservice.exceptions.AccountNotFoundException;
-import com.thecocktail.examples.microservice.repository.AccountRepository;
-import com.thecocktail.examples.microservice.service.TransferToAccountService;
+import com.pgancas.examples.microservice.entity.Account;
+import com.pgancas.examples.microservice.entity.TransferAmount;
+import com.pgancas.examples.microservice.exceptions.AccountNotFoundException;
+import com.pgancas.examples.microservice.repository.AccountRepository;
+import com.pgancas.examples.microservice.service.TransferToAccountService;
 
 /**
  * Controller to manage accounts

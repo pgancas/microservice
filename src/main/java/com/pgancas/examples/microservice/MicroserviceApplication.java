@@ -1,4 +1,4 @@
-package com.thecocktail.examples.microservice;
+package com.pgancas.examples.microservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
  *
  */
 @SpringBootApplication
-@ComponentScan({"com.thecocktail.examples.microservice"})
+@ComponentScan({"com.pgancas.examples.microservice"})
 public class MicroserviceApplication {
 
 	public static void main(String[] args) {

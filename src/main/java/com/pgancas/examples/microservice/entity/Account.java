@@ -1,4 +1,4 @@
-package com.thecocktail.examples.microservice.entity;
+package com.pgancas.examples.microservice.entity;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

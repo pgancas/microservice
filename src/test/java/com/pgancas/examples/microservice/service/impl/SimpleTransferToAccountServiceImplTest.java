@@ -1,4 +1,4 @@
-package com.thecocktail.examples.microservice.service.impl;
+package com.pgancas.examples.microservice.service.impl;
 
 import java.math.BigDecimal;
 
@@ -10,9 +10,10 @@ import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.thecocktail.examples.microservice.entity.Account;
-import com.thecocktail.examples.microservice.entity.TransferAmount;
-import com.thecocktail.examples.microservice.service.TransferToAccountService;
+import com.pgancas.examples.microservice.entity.Account;
+import com.pgancas.examples.microservice.entity.TransferAmount;
+import com.pgancas.examples.microservice.service.TransferToAccountService;
+import com.pgancas.examples.microservice.service.impl.SimpleTransferToAccountServiceImpl;
 
 
 @RunWith(SpringRunner.class)

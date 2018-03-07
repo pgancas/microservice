@@ -1,9 +1,9 @@
-package com.thecocktail.examples.microservice.repository;
+package com.pgancas.examples.microservice.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.thecocktail.examples.microservice.entity.Account;
+import com.pgancas.examples.microservice.entity.Account;
 
 /**
  * Persistence repository for accounts

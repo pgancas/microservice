@@ -1,4 +1,4 @@
-package com.thecocktail.examples.microservice;
+package com.pgancas.examples.microservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

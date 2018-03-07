@@ -1,4 +1,4 @@
-package com.thecocktail.examples.microservice.exceptions;
+package com.pgancas.examples.microservice.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

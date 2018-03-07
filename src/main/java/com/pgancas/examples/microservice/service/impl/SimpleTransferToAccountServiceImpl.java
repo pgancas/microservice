@@ -1,10 +1,10 @@
-package com.thecocktail.examples.microservice.service.impl;
+package com.pgancas.examples.microservice.service.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.thecocktail.examples.microservice.entity.Account;
-import com.thecocktail.examples.microservice.entity.TransferAmount;
-import com.thecocktail.examples.microservice.service.TransferToAccountService;
+import com.pgancas.examples.microservice.entity.Account;
+import com.pgancas.examples.microservice.entity.TransferAmount;
+import com.pgancas.examples.microservice.service.TransferToAccountService;
 
 /**
  * Simple implementation of TransferToAccountService

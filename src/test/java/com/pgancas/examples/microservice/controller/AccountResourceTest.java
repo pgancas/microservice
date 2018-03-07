@@ -1,4 +1,4 @@
-package com.thecocktail.examples.microservice.controller;
+package com.pgancas.examples.microservice.controller;
 
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
@@ -22,8 +22,9 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.thecocktail.examples.microservice.entity.Account;
-import com.thecocktail.examples.microservice.repository.AccountRepository;
+import com.pgancas.examples.microservice.controller.AccountResource;
+import com.pgancas.examples.microservice.entity.Account;
+import com.pgancas.examples.microservice.repository.AccountRepository;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(AccountResource.class)

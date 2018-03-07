@@ -1,7 +1,7 @@
-package com.thecocktail.examples.microservice.service;
+package com.pgancas.examples.microservice.service;
 
-import com.thecocktail.examples.microservice.entity.Account;
-import com.thecocktail.examples.microservice.entity.TransferAmount;
+import com.pgancas.examples.microservice.entity.Account;
+import com.pgancas.examples.microservice.entity.TransferAmount;
 
 /**
  * Service to transfer amounts to accounts
