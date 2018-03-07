@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  microservice:
+    build: target/docker
+    ports:
+      - 8080:8080
+    networks:
+      - service
+    
+networks:
+  service:
