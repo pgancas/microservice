@@ -36,4 +36,7 @@ and look at ./target/docker
  Actuators endpoints like /metrics, /info, /loggers... 
  See https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints	
 
+### Service info
+
+By swagger2, at runtime check endpoint /swagger-ui.html
 
