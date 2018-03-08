@@ -31,7 +31,7 @@ and look at ./target/docker
  with docker:
 ​	`docker-compose up -d`
 
-###Check health
+### Check health:
 
  Actuators endpoints like /metrics, /info, /loggers... 
  See https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints	
